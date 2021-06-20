@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar video 16</title>
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+    <!-- tenemos que hacer una pagina web donde se visualice el menu de navegacion en linea cuando tenemos un determinado pixeles y cuando achicamos esta pagina tiene q verse un menu de navegacion en columnas. -->
+    <nav>
+        <button class="nav-button" onclick="accion()">Menu</button>
+        <a href="" class="nav-enlace desaparece">inicio</a>
+        <a href="" class="nav-enlace desaparece">servicios</a>
+        <a href="" class="nav-enlace desaparece">nosotros</a>
+        <a href="" class="nav-enlace desaparece">contactos</a>
+    </nav>
+
+    <script>
+        function accion() {
+            console.log ("esta funcionando mi boton");
+            var ancla = document.getElementsByClassName('nav-enlace');
+            for (var i=0;i<ancla.length;i++) {
+                // lo que hace este for es sacar o colocar desaparece en cada ancla dependiendo de si este o no , gracias a toggle
+                ancla[i].classList.toggle("desaparece");
+            }
+        }
+    </script>
+</body>
+</html>

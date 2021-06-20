@@ -1,0 +1,13 @@
+h1{
+    background: salmon;
+    /* ahora le decimos que esto sea en linea de bloques */
+    display: inline-block;
+}
+a{
+    background: skyblue;
+    /* las anclas vienen determinadas en un display en linea , ahora le decimos que sean en bloques y yo los voy a separar 20 px ; */
+    display: block;
+    margin: 20px;
+    width: 20%;
+    padding: 5px;
+}

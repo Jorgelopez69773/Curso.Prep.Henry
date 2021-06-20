@@ -1,0 +1,52 @@
+.nav-enlace {
+    /* estoy poniendo las anclas en linea de bloques que no es lo mismo como venia predeterminado , esto me facilitara utilizar flexbox */
+    display:inline-block;
+    background:red;
+    color: #fff;
+    padding: 10px 30px;
+    /* sacare la linea que esta en el nombre de cada ancla; */
+    text-decoration: none;
+}
+/* ahora utilizare en HOVER para cambiar el color de el ancla cuando apunte con la flecha del mouse */
+.nav-enlace:hover {
+    background: blue;
+}
+.nav-enlace:active {
+    background: green;
+}
+nav {
+    background: chartreuse;
+    padding: 10px;
+    /* antes de poner display flex aqui para poder colocar cada ancla como separadas de igual forma tenemos que tener las anclas con el display inline-block porque sino no va a funcionar. */
+    display: flex;
+    /* ahora colocaremos una separacion con justify-content:, esto separa y coloca las anclas de una determinada forma la que utilizaremos sera la que separe en un espacio tanto a  la izquierda como la derecha y separacion igual entre las anclas ; */
+    justify-content:space-around;
+}
+.nav-button {
+    background: red;
+    color:#fff;
+    padding: 10px 0px;
+     /* border hay que pasarle 3 parametros , el primero es el ancho del borde, luego colocamos solid " significa que la linea sera solia una linea" y por ultimo un color */
+     border: 2px solid #fff;
+     /* ahora haremos que esto desaparesca cuando haya mas de 600 px con lo siguiente; */
+     display: none;
+
+}
+/* ahora haremos que superando los 600 px se vea de una determinada forma y a menos pixeles se vea de la siguiente manera */
+@media (max-width: 600px) {
+    nav {
+        background: black;
+        /* flex-direction: si le colocamos columas ,coloca a todos las anclas en columnas */
+        flex-direction:column;
+    }
+    .nav-enlace {
+        margin: 10px;
+    }
+    /* para que aparesca menu en menos de 600 px debemos hacer lo siguiente: */
+    .nav-button {
+        display: inline-block;
+    }
+    .desaparece {
+        display: none;
+    }
+}

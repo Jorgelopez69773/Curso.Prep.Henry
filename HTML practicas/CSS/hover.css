@@ -1,0 +1,10 @@
+button {
+    background: royalblue;
+    color: orange;
+}
+button:hover {
+    background: green;
+}
+button:active {
+    background: rgb(255, 0, 0);
+}

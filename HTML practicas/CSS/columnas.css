@@ -1,0 +1,15 @@
+nav{
+    background: #77ACF1;
+    padding: 30px;
+}
+.columna {
+    background: #FF449F;
+    color: #FFFFC7 ;
+    padding: 25px;
+     width: 25%; /*esto es el ancho que ocupara la columna */
+     margin: 20px;
+}
+.padre {
+    /* aqui utilizaremos flexboxs , en display le estamos diciendo que ahora ya no sera mas columnas en bloque como viene predeterminado sino que ahora sera flexible */
+    display: flex;
+}

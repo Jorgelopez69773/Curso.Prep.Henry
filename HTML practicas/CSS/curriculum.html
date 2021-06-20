@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jorge Lopez curriculum vitae</title>
+    <link rel="stylesheet" href="curriculum.css">
+</head>
+<body>
+    <header>
+        <h1 class="nombre">Jorge Luis Lopez</h1>
+    </header>
+    <nav>
+        <a href="" class="button-menu" onclick="despliega()">Menu</a>
+        <a href="" class="indice desaparece">Presentación</a>
+        <a href="" class="indice desaparece">Estudios</a>
+        <a href="" class="indice desaparece">Experiencia</a>
+        <a href="" class= "indice desaparece">Cursos</a>
+        <a href="" class="indice desaparece">Referencias</a>
+    </nav>
+    <script>
+        console.log ("esta funcionando el boton")
+        var desplegarmenu = document.getElementsByClassName("indice");
+        for (var i=0;i<desplegarmenu.length;i++) {
+            desplegarmenu[i].classList.toggle("desaparece");
+        } 
+    </script>
+</body>
+</html>

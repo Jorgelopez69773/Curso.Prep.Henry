@@ -1,0 +1,20 @@
+h1 {
+    color: chocolate;
+}
+img {
+    width: 400px;
+}
+#thirdDiv {
+    /* alto */
+    height: 600px;
+    /* ancho */
+    width: 500px;
+    background-color:crimson;
+    padding:50px;
+    border: 10px solid blue;
+}
+#spanDiv {
+    /* para cambiar tamaño de fuente  */
+    font-size: 18px;
+    margin: 50px;
+}

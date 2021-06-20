@@ -1,0 +1,20 @@
+h1{
+    background: #FF616D ;
+    /* margin-left: 100px;
+    margin-bottom: 150px; */
+    /* margin bottom es para dar un margen inferior ,mientras que margin-left es para dar margen a la izquierda, */
+    /* margin-top: 50px;
+    margin-right: 35px; */
+    /* margin-top es para dar margen superior y margin-right es para dar margen a la derecha; */
+    /* margin: 100px; */
+    /* margin solo da margen en todos los lados de forma igual */
+    /* margin: 150px 300px; */
+    /* margin con dos datos , el primero le dara el margen de arriba y abajo de forma igual y el segundo le dara margen de izquierda y derecha */
+    margin: 100px 50px 150px 300px;
+    /* este ultimo margin con cuatro datos , da margen a PARTE SUPERIO, luego PARTE DERECHA, ABAJO,PARTE IZQUIERDA; */
+}
+p{
+    background: #FFC074;
+    padding: 300px;
+    /* padding:  ES UN MARGEN INTERNO;A MI PARECER HACE LO CONTRARIO QUE MARGIN YA QUE ESTE SE EXPANDE EL OTRO LO CONTRAE */
+}
